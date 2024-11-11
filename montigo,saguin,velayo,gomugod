@@ -1,0 +1,605 @@
+#include<iostream>
+#include<string>
+#include <cctype>
+#include <limits>
+
+using namespace std;
+class QuizGame{
+	public:
+void Quiz(){
+    string question, answer, userAnswer;
+    int score = 0;
+    cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+    // Question 1
+    	
+	q1:
+    question = "\t\t\t  1. Which of the following is NOT a common operation on a linked list? \n\t\t\t   a) Insertion \n\t\t\t   b) Deletion \n\t\t\t   c) Traversal \n\t\t\t   d) Sorting by index\n";
+    answer = "D";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;    
+    if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is D.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q1;
+}
+
+
+    // Question 2
+    q2:
+    question = "\t\t\t  2. What is the time complexity of inserting an element at the beginning\n\t\t\t  of a singly linked list?\n\t\t\t   a) O(1) \n\t\t\t   b) O(log n)\n\t\t\t   c) O(n)\n\t\t\t   d) O(n^2)\n";
+    answer = "A";
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+    
+if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    		userAnswer = toupper(userAnswer[0]);
+ if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+    
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is A.\n\n";
+    }
+  
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q2;
+}
+   
+
+    // Question 3
+    q3:
+    question = "\t\t\t  3. A doubly linked list differs from a singly linked list in that it: \n\t\t\t  a) Has only one pointer per node \n\t\t\t  b) Has two pointers per node \n\t\t\t  c) Is more efficient for insertion  \n\t\t\t  d) Is less efficient for deletion\n";
+    answer = "B";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+    if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is B.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q3;
+}
+
+
+    // Question 4
+    q4:
+    question = "\t\t\t  4. Which data structure is best suited for implementing a music playlist\n\t\t\t  with frequent insertions and deletions at the beginning?\n\t\t\t  a) Array  \n\t\t\t  b) Singly linked list  \n\t\t\t  c) Doubly linked list\n\t\t\t  d) Circular linked list \n";
+    answer = "C";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+   if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is C.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q4;
+}
+
+    
+
+    // Question 5
+    q5:
+    question = "\t\t\t  5. Circular linked lists are used to implement:  \n\t\t\t  a) Stacks  \n\t\t\t  b) Queues  \n\t\t\t  c) Both a and b  \n\t\t\t  d) Neither a nor b\n";
+    answer = "C";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+   if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+	 if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is C.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q5;
+}
+   
+    // Question 6
+    q6:
+    question = "\t\t\t  6. What is the time complexity of inserting an element in an arrar by its index?\n\t\t\t  a) O(1) \n\t\t\t  b) O(log n)\n\t\t\t  c) O(n)\n\t\t\t  d) O(n^2)\n";
+    answer = "A";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+    if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is A.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q6;
+}
+
+    
+
+    // Question 7
+    q7:
+    question = "\t\t\t  7. Which of the following is NOT a disadvantage of arrays?  \n\t\t\t  a) Fixed size  \n\t\t\t  b) Efficient random access  \n\t\t\t  c) Inefficient insertion and deletion in the middle  \n\t\t\t  d) Memory fragmentation\n";
+    answer = "B";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+    if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+    	  
+	if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is B.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q7;
+}
+
+    
+
+    // Question 8
+    q8:
+    question = "\t\t\t  8.  Which data structure is best suited for implementing a lookup table?\n\t\t\t  a) Linked list \n\t\t\t  b) Stack\n\t\t\t  c) Queue\n\t\t\t  d) Array\n";
+    answer = "D";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+    if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is D.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q8;
+}
+
+
+    // Question 9
+    q9:
+    question = "\t\t\t  9.  What is the time complexity of sorting an array using bubble sort?\n\t\t\t  a) O(1)  \n\t\t\t  b) O(log n)  \n\t\t\t  c) O(n^2)  \n\t\t\t  d) O(n) \n";
+    answer = "C";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+   if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	 if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is C.\n\n";
+    }
+
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q9;
+}
+   
+    // Question 10
+    q10:
+    question = "\t\t\t  10. Which data structure is used to implement a dynamic array? \n\t\t\t  a) Linked list \n\t\t\t  b) Stack  \n\t\t\t  c) Queue  \n\t\t\t  d) ArrayList\n";
+    answer = "D";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is D.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q10;
+}
+
+
+    // Question 11
+    q11:
+    question = "\t\t\t  11.What is the data structure operation that removes an element from the top of a stack? \n\t\t\t  a) Push \n\t\t\t  b) Pop  \n\t\t\t  c) Peek  \n\t\t\t  d) Enqueue\n";
+    answer = "B";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is B.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q11;
+}
+
+    
+
+    // Question 12
+    q12:
+    question = "\t\t\t  12.A stack follows the principle of:  \n\t\t\t  a) First-In-First-Out (FIFO) \n\t\t\t  b) Last-In-First-Out (LIFO)  \n\t\t\t  c) First-In-Last-Out (FILO)  \n\t\t\t  d) Last-In-Last-Out (LILO)\n";
+    answer = "B";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is B.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q12;
+}
+    
+
+    // Question 13
+    q13:
+    question = "\t\t\t  13.  Which of the following applications uses a stack?\n\t\t\t  a) Function call mechanism  \n\t\t\t  b) Undo/Redo functionality  \n\t\t\t  c) Browser history  \n\t\t\t  d) All of the above\n";
+    answer = "D";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is D.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q12;
+}
+
+
+    // Question 14
+    q14:
+    question = "\t\t\t  14. What is the time complexity of the push and pop operations in a stack implemented using an array? \n\t\t\t  a) O(1)  \n\t\t\t  b) O(log n)  \n\t\t\t  c) O(n)\n\t\t\t  d) O(n^2)\n";
+    answer = "A";
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is A.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q14;
+}
+
+
+    // Question 15
+    q15:
+    question = "\t\t\t  15.  A stack can be implemented using:  \n\t\t\t  a) Array  \n\t\t\t  b) Link List  \n\t\t\t  c) Both a and b  \n\t\t\t  d) Neither a nor b\n";
+    answer = "C";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is C.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q15;
+}
+
+    
+    // Question 16
+    q16:
+    question = "\t\t\t  16. What is the data structure operation that removes an element from the front of a queue? \n\t\t\t  a) Enqueue \n\t\t\t  b) Dequeue \n\t\t\t  c) Peek \n\t\t\t  d) Pop\n";
+    answer = "B";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	 if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is B.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q16;
+}
+
+   
+
+    // Question 17
+    q17:
+    question = "\t\t\t  17. A queue follows the principle of: \n\t\t\t  a) First-In-First-Out (FIFO)  \n\t\t\t  b) Last-In-First-Out (LIFO)  \n\t\t\t  c) First-In-Last-Out (FILO)  \n\t\t\t  d) Last-In-Last-Out (LILO)\n";
+    answer = "A";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is A.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q17;
+}
+
+
+    // Question 18
+    q18:
+    question = "\t\t\t  18. What is the data structure operation that insert an element from the front of a queue? \n\t\t\t  a) Enqueue \n\t\t\t  b) Dequeue \n\t\t\t  c) Peek \n\t\t\t  d) Pop\n";
+    answer = "A";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is A.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q17;
+}
+    // Question 19
+    question = "\t\t\t 19. What is the data structure operation that can see the front element from the front of a queue? \n\t\t\t  a) Enqueue \n\t\t\t  b) Dequeue \n\t\t\t  c) Peek \n\t\t\t  d) Pop\n";
+    answer = "C";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+     if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is C.\n\n";
+    }
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q17;
+}
+
+    // Question 20
+    question = "\t\t\t  20. Which of the following is NOT data structure operation of a queue? \n\t\t\t  a) Enqueue \n\t\t\t  b) Dequeue \n\t\t\t  c) Peek \n\t\t\t  d) Pop\n";
+    answer = "D";
+
+    cout << question;
+    cout<<"\t\t\t  Ans.-> ";
+    cin >> userAnswer;
+    if(userAnswer.length()==1 && (toupper(userAnswer[0]))>='A'&& toupper(userAnswer[0])<='D'){
+    	  userAnswer = toupper(userAnswer[0]);
+	
+    if (userAnswer == answer) {
+        cout << "\t\t\t\t\t\t\tCorrect!\n\n";
+        score++;
+    } else {
+        cout << "\t\t\t\t\t  Incorrect. The correct answer is D.\n\n";
+    }
+    
+
+    
+}else{
+	system("cls");
+	cout<<"\n\n\n\n\n";
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+	cout<<"\t\t\t\t\t\tinvalid input choose(A-D)\n";
+	goto q17;
+}
+    
+    cout << "\n\t\t\t\t\t\t  Your final score is: " << score << " out of 20\n\n";
+    
+
+}
+
+
+};
+ 
+int main(){
+	int choice;
+	QuizGame Qz;
+	string yn;
+	 do {
+	 	cout<<"\n\n\n\n\n";
+    a:
+	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n";
+    cout<<"\t\t\t\t\t\t\t[1] Start\n";
+    cout<<"\t\t\t\t\t\t\t[2] Exit\n";
+    cout<<"\t\t\t\t\t\t\tChoice a Number(1-2): ";
+    cin>>choice;  
+    system("cls");
+   
+        // Check for input errors
+        if (cin.fail()) {
+            cin.clear(); // Clear the error flags
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore the invalid input
+            system("cls");
+            cout<<"\n\n\n\n\n\n\n";
+            cout << "\t\t\t\t\t  Invalid input. Please enter a number only.\n";
+            goto a;
+        }
+    } while (cin.fail());
+    switch(choice){
+    	case 1 :
+    		quiz:
+    		Qz.Quiz();
+    		ans:
+    			cout<<"\t\t\t\t\t\t  QUIZ GAME ANSWER KEY\n\n";
+    		cout<<"\t\t\t\t\t\t\t 1.D.\n\t\t\t\t\t\t\t 2.A\n\t\t\t\t\t\t\t 3.B.\n\t\t\t\t\t\t\t 4.C.\n\t\t\t\t\t\t\t 5.C.\n";
+    		cout<<"\t\t\t\t\t\t\t 6.A.\n\t\t\t\t\t\t\t 7.B\n\t\t\t\t\t\t\t 8.D.\n\t\t\t\t\t\t\t 9.C.\n\t\t\t\t\t\t\t10.D.\n";
+   			cout<<"\t\t\t\t\t\t\t11.B.\n\t\t\t\t\t\t\t12.B\n\t\t\t\t\t\t\t13.D.\n\t\t\t\t\t\t\t14.A.\n\t\t\t\t\t\t\t15.C.\n";
+			cout<<"\t\t\t\t\t\t\t16.B.\n\t\t\t\t\t\t\t17.A\n\t\t\t\t\t\t\t18.A.\n\t\t\t\t\t\t\t19.C.\n\t\t\t\t\t\t\t20.D.\n";
+			cout<<"\n\t\t\t\t\t  Do you want to try Again y/n: ";
+			cin>>yn;
+			if(yn=="y"||yn=="Y"){
+				system("cls");
+				goto quiz;
+			}
+			else if(yn=="n"||yn=="N"){
+				goto exit;
+					
+			}
+			else{
+				system("cls");
+				cout<<"\n\n\n\n\n";
+            	cout<<"\t\t\t\t\t\t\tQUIZ GAME\n\n";
+				cout<<"\t\t\t\t\t\tInvalid Input choose(y/n)\n";
+				goto ans;
+			}
+		break;	
+    	case 2 :
+    		exit:
+    		system("cls");
+    		cout<<"\n\n\n\n\n\n\n";
+    		cout<<"\t\t\t\t\t\t\tExiting... Program!....";
+    		
+    		break;
+        default:
+        	system("cls");
+        	cout<<"\n\n\n\n\n\n\n";
+        	cout<<"\t\t\t\t\t\tInvalid Input. Please choice(1-2)\n";
+        	goto a;
+        	break;
+	}
+    
+}
